@@ -1,9 +1,9 @@
 import { ProgressBar } from "./progressBar";
 
-const About = ({ element, aboutoffSetTop }) => {
+const About = ({ aboutElement, aboutoffSetTop }) => {
   return (
     <>
-      <div id="about" ref={element} className="pt-5 text-light">
+      <div id="about" ref={aboutElement} className="pt-5 text-light">
         <div className="about-me container">
           <div className="section-title pt-4">
             <h2>About</h2>

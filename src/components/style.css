@@ -95,6 +95,7 @@ font-family: "Poppins",sans-serif;
   .nav-container{
     background-color: black;
     height: 70px;
+    opacity: 0.8;
   }
   
   .navbar a i,
@@ -404,7 +405,7 @@ font-family: "Poppins",sans-serif;
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: 0.8s ease;
+  transition: 1s ease;
   transition-delay: 0.5s;
   background-color: #18d26e;
 }

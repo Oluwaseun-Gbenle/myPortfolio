@@ -24,7 +24,7 @@ const NavBar = (props) => {
             <li>
               <a
                 className={`nav-link scrollto ${
-                  props.scrollPosition >= (props.aboutoffSetTop-150) && "active"
+                  props.scrollPosition >= (props.aboutoffSetTop-150) && props.scrollPosition < (props.portfolioOffSetTop-150) && "active"
                 }`}
                 href="#about"
               >
@@ -35,7 +35,7 @@ const NavBar = (props) => {
             <li>
               <a
                 className={`nav-link scrollto ${
-                  window.location.hash === "portfolio" && "active"
+                  props.scrollPosition >= (props.portfolioOffSetTop-150)  && "active"
                 }`}
                 href="#portfolio"
               >
@@ -70,7 +70,7 @@ const NavBar = (props) => {
               <a href="#home" className={`nav-item nav-link ${ props.scrollPosition < (props.aboutoffSetTop-150) &&"active"}`}>
                 Home
               </a>
-              <a href="#about" className={`nav-item nav-link ${props.scrollPosition < (props.aboutoffSetTop-150) && 'active'}`}>
+              <a href="#about" className={`nav-item nav-link ${props.scrollPosition >= (props.aboutoffSetTop-150) && 'active'}`}>
                 About
               </a>
               <a href="#portfolio" className="nav-item nav-link">
