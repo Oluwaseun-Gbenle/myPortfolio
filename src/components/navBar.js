@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
 const NavBar = (props) => {
-  console.log("window.location", window.location);
   return (
     <>
-      <div className="nav-container nav-position">
+      <div className="nav-container-non-mobile nav-position">
         <nav
           id="navbar"
           className="non-mobile-nav  navbar d-flex justify-content-center"
@@ -13,8 +12,8 @@ const NavBar = (props) => {
             <li>
               <a
                 className={`nav-link scrollto ${
-                 props.scrollPosition < (props.aboutoffSetTop-150) &&
-                  "active"
+                 (props.scrollPosition=== 0 && "active") || (props.scrollPosition < (props.aboutoffSetTop-200) &&
+                  "active")
                 }`}
                 href="#home"
               >
@@ -24,7 +23,7 @@ const NavBar = (props) => {
             <li>
               <a
                 className={`nav-link scrollto ${
-                  props.scrollPosition >= (props.aboutoffSetTop-150) && props.scrollPosition < (props.portfolioOffSetTop-150) && "active"
+                  props.scrollPosition >= (props.aboutoffSetTop-200) && props.scrollPosition < (props.portfolioOffSetTop-200) && "active"
                 }`}
                 href="#about"
               >
@@ -35,7 +34,7 @@ const NavBar = (props) => {
             <li>
               <a
                 className={`nav-link scrollto ${
-                  props.scrollPosition >= (props.portfolioOffSetTop-150)  && "active"
+                  props.scrollPosition >= (props.portfolioOffSetTop-200)  && "active"
                 }`}
                 href="#portfolio"
               >
@@ -67,13 +66,16 @@ const NavBar = (props) => {
           </div>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav">
-              <a href="#home" className={`nav-item nav-link ${ props.scrollPosition < (props.aboutoffSetTop-150) &&"active"}`}>
+              <a href="#home" className={`nav-item nav-link ${   (props.scrollPosition=== 0 && "active") || (props.scrollPosition < (props.aboutoffSetTop-200) &&
+                  "active")}`}>
                 Home
               </a>
-              <a href="#about" className={`nav-item nav-link ${props.scrollPosition >= (props.aboutoffSetTop-150) && 'active'}`}>
+              <a href="#about" className={`nav-item nav-link ${props.scrollPosition >= (props.aboutoffSetTop-200) && props.scrollPosition < (props.portfolioOffSetTop-200) && "active"
+               }`}>
                 About
               </a>
-              <a href="#portfolio" className="nav-item nav-link">
+              <a href="#portfolio" className={`nav-item nav-link ${
+                  props.scrollPosition >= (props.portfolioOffSetTop-200)  && "active" }`}>
                 Portfolio
               </a>
               <a href="#contact" className="nav-item nav-link disabled" tabIndex="-1">
