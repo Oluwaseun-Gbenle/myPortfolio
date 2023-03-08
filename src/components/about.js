@@ -1,6 +1,6 @@
 import { ProgressBar } from "./progressBar";
 
-const About = ({ aboutElement, aboutoffSetTop }) => {
+const About = ({ aboutElement }) => {
   return (
     <>
       <div id="about" ref={aboutElement} className="pt-5 text-light">
@@ -26,25 +26,21 @@ const About = ({ aboutElement, aboutoffSetTop }) => {
                       <ProgressBar
                         width={95}
                         skill={"HTML"}
-                        aboutoffSetTop={aboutoffSetTop}
                       />
 
                       <ProgressBar
                         width={90}
                         skill={"CSS"}
-                        aboutoffSetTop={aboutoffSetTop}
                       />
 
                       <ProgressBar
                         width={80}
                         skill={"JavaScript"}
-                        aboutoffSetTop={aboutoffSetTop}
                       />
 
                       <ProgressBar
                         width={59}
                         skill={"Node.js"}
-                        aboutoffSetTop={aboutoffSetTop}
                       />
                     </div>
 
@@ -52,25 +48,21 @@ const About = ({ aboutElement, aboutoffSetTop }) => {
                       <ProgressBar
                         width={85}
                         skill={"React"}
-                        aboutoffSetTop={aboutoffSetTop}
                       />
 
                       <ProgressBar
                         width={61}
                         skill={"React Native"}
-                        aboutoffSetTop={aboutoffSetTop}
                       />
 
                       <ProgressBar
                         width={64}
                         skill={"TypeScript"}
-                        aboutoffSetTop={aboutoffSetTop}
                       />
 
                       <ProgressBar
                         width={52}
                         skill={"Photoshop"}
-                        aboutoffSetTop={aboutoffSetTop}
                       />
                     </div>
                   </div>

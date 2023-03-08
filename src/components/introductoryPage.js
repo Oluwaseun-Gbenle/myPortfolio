@@ -44,7 +44,6 @@ const IntroductoryPage = () => {
     };
   }, []);
 
-
   return (
     <>
       <Loader loaderEl={loaderEl} />
@@ -80,8 +79,8 @@ const IntroductoryPage = () => {
           </div>
         </div>
       </div>
-      <About aboutElement={aboutElement} aboutoffSetTop={aboutoffSetTop}/>
-      <Portfolio portfolioElement={portfolioElement} portfolioOffSetTop={portfolioOffSetTop}/>
+      <About aboutElement={aboutElement} />
+      <Portfolio portfolioElement={portfolioElement} />
     </>
   );
 };
