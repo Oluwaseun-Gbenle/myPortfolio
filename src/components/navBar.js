@@ -34,7 +34,7 @@ const NavBar = (props) => {
             <li>
               <a
                 className={`nav-link scrollto ${
-                  props.scrollPosition >= (props.portfolioOffSetTop-200)  && "active"
+                  props.scrollPosition >= (props.portfolioOffSetTop-200)  && props.scrollPosition < (props.contactOffSetTop-200) && "active"
                 }`}
                 href="#portfolio"
               >
@@ -44,7 +44,7 @@ const NavBar = (props) => {
             <li>
               <a
                 className={`nav-link scrollto ${
-                  window.location.hash === "contact" && "active"
+                  props.scrollPosition >= (props.contactOffSetTop-200) && "active"
                 }`}
                 href="#contact"
               >

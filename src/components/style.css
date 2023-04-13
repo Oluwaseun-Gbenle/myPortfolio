@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
   background-color: black;
   scroll-behavior: smooth;
 }
+
 .container1{
      height: 100vh;
     font-family: "Raleway", sans-serif;
@@ -19,7 +21,7 @@ margin-left:25%;
 margin-right:25%;
 }
 
-.name-font{
+.poppins-font{
 font-family: "Poppins",sans-serif;
 }
 
@@ -143,7 +145,7 @@ font-family: "Poppins",sans-serif;
       background-color: black;
       padding: 10px;
     }
-    
+   
     @media screen and (max-width: 700px) {
       .non-mobile-nav{
         visibility: hidden;
@@ -321,6 +323,7 @@ font-family: "Poppins",sans-serif;
   right: 15px;
 }
 
+
 .border-green{
   border-color: #18d26e;
   color: #fff;
@@ -329,6 +332,17 @@ font-family: "Poppins",sans-serif;
 .border-green:hover{
  background-color: #18d26e;
 }
+.modal-90w{
+  min-width: 95%;
+}
+
+.modal-content{
+   background-color: #141414;
+  color: #fff;
+}
+
+   
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -443,3 +457,34 @@ font-family: "Poppins",sans-serif;
   background-color: #18d26e;
 }
 
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+#contact,.contact-svg{
+  background-color:#fff ;
+  color: black;
+  font-family: raleway;
+}
+.textarea-height{
+  height: 150px;
+}
+.submit-button{
+  border: 2px solid #18d26e;
+  color: #18d26e;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+.submit-button:hover{
+  background-color: #18d26e;
+  color: #fff;
+}
+.raleway-font{
+  font-family: "Raleway", sans-serif;
+}
+.contact-input-width{
+  width: 70%;
+}
+
+.cont-padding{
+padding:100px 0 100px 0
+}

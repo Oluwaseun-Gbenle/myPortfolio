@@ -7,6 +7,7 @@ import Loader from "./loader";
 import About from "./about";
 import { useScrollPosition } from "./scroll-on-y-axis";
 import Portfolio from "./portfolio";
+import Contact from "./contact";
 
 const IntroductoryPage = () => {
   const el = useRef(null);
@@ -14,10 +15,13 @@ const IntroductoryPage = () => {
   const scrollPosition = useScrollPosition();
   const aboutElement = useRef("about");
   const portfolioElement = useRef("portfolio");
+  const contactElement = useRef("contact");
   const about = aboutElement.current;
   const portfolio = portfolioElement.current;
+  const contact = contactElement.current;
   const aboutoffSetTop = about.offsetTop;
   const portfolioOffSetTop = portfolio.offsetTop;
+  const contactOffSetTop = contact.offsetTop;
 
   useEffect(() => {
     let loader = loaderEl.current;
@@ -49,11 +53,11 @@ const IntroductoryPage = () => {
       <Loader loaderEl={loaderEl} />
       <div id="home" className="container1 " style={darkModeStyle}>
         <div>
-          <NavBar scrollPosition={scrollPosition} aboutoffSetTop={aboutoffSetTop} portfolioOffSetTop={portfolioOffSetTop}/>
+          <NavBar scrollPosition={scrollPosition} aboutoffSetTop={aboutoffSetTop} portfolioOffSetTop={portfolioOffSetTop} contactOffSetTop={contactOffSetTop}/>
           <div className="row align-items-center center-text vh-100">
             <div className="d-flex justify-content-center col-md-6 ">
               <div className="text-container w-100">
-                <h1 className="fw-bold name-font">Gbenle Seun</h1>
+                <h1 className="fw-bold poppins-font">Gbenle Seun</h1>
                 <h3 className="fw-light">
                   I'm a{" "}
                   <span className="underline-text" ref={el}>
@@ -81,6 +85,7 @@ const IntroductoryPage = () => {
       </div>
       <About aboutElement={aboutElement} />
       <Portfolio portfolioElement={portfolioElement} />
+      <Contact contactElement={contactElement} />
     </>
   );
 };
