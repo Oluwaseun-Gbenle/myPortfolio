@@ -33,7 +33,7 @@ const PortfolioModal = ({showModal,setShowModal,modalNumber}) => {
           src={item.slide}
           alt={item.label}
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={modalDetails[modalNumber]?.color==="light" && "text-dark"}>
           <h3>{item.label}</h3>
           <p>{item.description}</p>
         </Carousel.Caption>

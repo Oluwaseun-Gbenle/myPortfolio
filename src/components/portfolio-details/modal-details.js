@@ -24,6 +24,7 @@ export const modalDetails = [
           "Subjects available in a session being edited in the Staff/Teachers Portal ",
       },
     ],
+    color:"dark",
     category: "Web Design",
     client: "Flavetech",
     date: "01, May 2022",
@@ -43,14 +44,14 @@ export const modalDetails = [
               "https://i.ibb.co/WKZfvKJ/screencapture-cbt-flavetechs-candidate-answers-2023-04-09-20-41-18-1.png",
             label: "Candidate Exam Page",
             description:
-              "Answering of questions by candidates",
+              "Answering of questions by candidates in the candidate section",
           },
           {
             slide:
               "https://i.ibb.co/jTsMgKT/screencapture-cbt-flavetechs-candidate-view-answers-2023-04-09-20-42-43.png",
             label: "Answer View",
             description:
-              "List of answers by candidates",
+              "List of answers by candidates in the candidate section",
           },
         
           {
@@ -58,9 +59,10 @@ export const modalDetails = [
               "https://i.ibb.co/gWVJ70c/Add-question.png",
             label: "Question Edit",
             description:
-              "Editing Of questions by Examiners",
+              "Editing Of questions by Examiners in the examiner section",
           },
         ],
+        color:"light",
         category: "Web Design",
         client: "Flavetech",
         date: "01, May 2022",
@@ -100,9 +102,8 @@ export const modalDetails = [
             client: "Flavetech",
             date: "01, May 2022",
             projectDetails:
-              "The school management portal  facilitates the management of various operations within educational institutions such as schools, colleges, and universities. It is designed to streamline administrative tasks and improve communication among administrators, teachers, students, and parents. It also has a feature that allows users switch themes as it suits them.",
-          featureList:[{feature:"Student Information Management:  This provides students with a comprehensive platform to manage and store important information, such as assessments, notes, announcements, class and exam timetables, and result printing. This allows students to easily access and organize their academic information in one place, ensuring they have the necessary resources and updates for their studies."},
-        {feature:"Teacher and Staff Management: The portal enables administrators to manage teacher and staff information, student information, parent information, session,class and subject setups, class and exam schedules, attendance,admissions, performance storage and evaluations."},
-        {feature:"Parent and Guardian Management: It aims to provide parents or guardians with convenient access to information, communication channels, and features that enable them to actively participate in their children's education and stay engaged with the school."}]
+              "This Web Service Application provides a way of exchanging data and functionality between different applications.",
+          featureList:[{feature:"Client Section: This provides clients with the ability to create URLs (Uniform Resource Locators) and modify details for their applications.It also helps to manage and get products available."},
+        {feature:"Administrator Section:This section provides a centralized and secure interface for managing different application's file storage and data required by the web services, ensuring that files and data are organized, secure, and accessible to authorized users. "},]
             },
 ];
