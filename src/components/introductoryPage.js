@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { darkModeStyle } from "./inlineStyles";
 import "./style.css";
 import Typed from "typed.js";
 import NavBar from "./navBar";
@@ -51,12 +50,12 @@ const IntroductoryPage = () => {
   return (
     <>
       <Loader loaderEl={loaderEl} />
-      <div id="home" className="container1 " style={darkModeStyle}>
+      <div id="home" className="container1 ">
         <div>
           <NavBar scrollPosition={scrollPosition} aboutoffSetTop={aboutoffSetTop} portfolioOffSetTop={portfolioOffSetTop} contactOffSetTop={contactOffSetTop}/>
           <div className="row align-items-center center-text vh-100">
             <div className="d-flex justify-content-center col-md-6 ">
-              <div className="text-container w-100">
+              <div className="text-container w-100 text-white">
                 <h1 className="fw-bold poppins-font">Gbenle Seun</h1>
                 <h3 className="fw-light">
                   I'm a{" "}

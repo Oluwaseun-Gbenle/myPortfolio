@@ -340,8 +340,24 @@ font-family: "Poppins",sans-serif;
    background-color: #141414;
   color: #fff;
 }
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2318d26e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
 
-   
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2318d26e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.resume-btn{
+  color: currentColor;
+  text-decoration: none;
+  border: 1px solid #18d26e;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.resume-btn:hover{
+  background-color: #18d26e;
+  color: white;
+}
 
 /*--------------------------------------------------------------
 # About
