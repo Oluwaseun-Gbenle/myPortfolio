@@ -64,16 +64,16 @@ const IntroductoryPage = () => {
                   </span>
                 </h3>
                 <div className="d-flex mt-3">
-                  <a href="#" className="twitter social-links">
+                  <a href="https://twitter.com/SheywunG" target="_blank" rel="noreferrer" className="twitter social-links">
                     <i className="bi bi-twitter"></i>
                   </a>
-                  <a href="#" className="github social-links">
+                  <a href="https://github.com/Oluwaseun-Gbenle" target="_blank" rel="noreferrer" className="github social-links">
                     <i className="bi bi-github"></i>
                   </a>
-                  <a href="#" className="instagram social-links">
+                  <a href="/" className="instagram social-links">
                     <i className="bi bi-instagram"></i>
                   </a>
-                  <a href="#" className="linkedin social-links">
+                  <a href="https://www.linkedin.com/in/oluwaseun-gbenle-03742a158" target="_blank" rel="noreferrer"  className="linkedin social-links">
                     <i className="bi bi-linkedin"></i>
                   </a>
                 </div>
