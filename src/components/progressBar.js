@@ -12,7 +12,8 @@ export const ProgressBar = ({ width, skill}) => {
   return (
     <div className="progress">
       <span className="skill">
-        {skill} <i className="val">{value}%</i>
+        {skill} 
+        {/* <i className="val">{value}%</i> */}
       </span>
       <div className="progress-bar-wrap">
         <div
@@ -24,6 +25,7 @@ export const ProgressBar = ({ width, skill}) => {
           aria-valuemax="100"
         ></div>
       </div>
+      
     </div>
   );
 };

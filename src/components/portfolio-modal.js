@@ -10,7 +10,7 @@ const PortfolioModal = ({showModal,setShowModal,modalNumber}) => {
     show={showModal}
     onHide={() => setShowModal(false)}
     dialogClassName="modal-90w "
-    style={{opacity:'0.9'}}
+    style={{opacity:'1'}}
     centered
   >
   

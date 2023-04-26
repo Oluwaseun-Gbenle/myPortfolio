@@ -1,5 +1,4 @@
 import React from 'react'
-import { darkModeStyle } from './inlineStyles'
 
 const Loader = (props) => {
 

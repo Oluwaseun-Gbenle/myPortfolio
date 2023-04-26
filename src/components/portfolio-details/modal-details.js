@@ -4,21 +4,21 @@ export const modalDetails = [
     image: [
       {
         slide:
-          "https://i.ibb.co/vkvSkHC/screencapture-localhost-3001-parent-dashboard-my-wards-2023-04-09-15-06-52.png",
+          "https://i.ibb.co/6g8c8cL/Untitled-design-15.png",
         label: "Ward List",
         description:
           "A list of wards/children under a parent in the Parent's portal",
       },
       {
         slide:
-          "https://i.ibb.co/gJcZDdJ/screencapture-localhost-3001-stds-dashboard-student-student-note-2023-04-09-15-03-32.png",
+          "https://i.ibb.co/1nCRVz0/Untitled-design-16.png",
         label: "Student Notes",
         description:
           "A list of notes written by a student in the Student Portal",
       },
       {
         slide:
-          "https://i.ibb.co/mykgTNL/screencapture-localhost-3001-dashboard-smp-session-edit-session-class-table-2023-04-09-15-49-32.png",
+          "https://i.ibb.co/1XKCj0K/Untitled-design-14.png",
         label: "Session Subject Edit",
         description:
           "Subjects available in a session being edited in the Staff/Teachers Portal ",
@@ -41,14 +41,14 @@ export const modalDetails = [
         image: [
           {
             slide:
-              "https://i.ibb.co/WKZfvKJ/screencapture-cbt-flavetechs-candidate-answers-2023-04-09-20-41-18-1.png",
+              "https://i.ibb.co/WKC0f0h/Untitled-design-2.png",
             label: "Candidate Exam Page",
             description:
               "Answering of questions by candidates in the candidate section",
           },
           {
             slide:
-              "https://i.ibb.co/jTsMgKT/screencapture-cbt-flavetechs-candidate-view-answers-2023-04-09-20-42-43.png",
+              "https://i.ibb.co/8M5FPQh/Untitled-design-13.png",
             label: "Answer View",
             description:
               "List of answers by candidates in the candidate section",
@@ -56,7 +56,7 @@ export const modalDetails = [
         
           {
             slide:
-              "https://i.ibb.co/gWVJ70c/Add-question.png",
+              "https://i.ibb.co/CKFrfxd/Untitled-design-17.png",
             label: "Question Edit",
             description:
               "Editing Of questions by Examiners in the examiner section",
@@ -78,32 +78,77 @@ export const modalDetails = [
             image: [
               {
                 slide:
-                  "https://i.ibb.co/vkvSkHC/screencapture-localhost-3001-parent-dashboard-my-wards-2023-04-09-15-06-52.png",
-                label: "Ward List",
+                  "https://i.ibb.co/Yt52KkG/Untitled-design-6.png",
+                label: "File Manager",
                 description:
-                  "A list of wards/children under a parent in the Parent's portal",
+                  "A list of folders created for storage of imporant files used in applications",
               },
               {
                 slide:
-                  "https://i.ibb.co/gJcZDdJ/screencapture-localhost-3001-stds-dashboard-student-student-note-2023-04-09-15-03-32.png",
-                label: "Student Notes",
+                  "https://i.ibb.co/s3xrBfQ/Untitled-design-10.png",
+                label: "Add Documentation",
                 description:
-                  "A list of notes written by a student in the Student Portal",
+                  "Creation of documentation guide for users of the applications",
               },
               {
                 slide:
-                  "https://i.ibb.co/mykgTNL/screencapture-localhost-3001-dashboard-smp-session-edit-session-class-table-2023-04-09-15-49-32.png",
-                label: "Session Subject Edit",
+                  "https://i.ibb.co/tH2j8p7/Untitled-design-11.png",
+                label: "Add Student Management Service",
                 description:
-                  "Subjects available in a session being edited in the Staff/Teachers Portal ",
+                  "Creation of URLs and student management service details",
               },
             ],
+            color:"light",
             category: "Web Design",
             client: "Flavetech",
             date: "01, May 2022",
             projectDetails:
               "This Web Service Application provides a way of exchanging data and functionality between different applications.",
-          featureList:[{feature:"Client Section: This provides clients with the ability to create URLs (Uniform Resource Locators) and modify details for their applications.It also helps to manage and get products available."},
-        {feature:"Administrator Section:This section provides a centralized and secure interface for managing different application's file storage and data required by the web services, ensuring that files and data are organized, secure, and accessible to authorized users. "},]
+              featureList:[{feature:"Client Section: This provides clients with the ability to create URLs (Uniform Resource Locators) and modify details for their applications.It also helps to manage and get products available."},
+              {feature:"Administrator Section:This section provides a centralized and secure interface for managing different application's file storage and data required by the web services, ensuring that files and data are organized, secure, and accessible to authorized users. "},]
+               
             },
+            {
+  title: "E-wallet",
+  image: [
+    {
+      slide:
+        "https://i.ibb.co/V2Cpg96/glow-2.png",
+      label: "Wallet Page",
+      
+    },
+  
+  ],
+  color:"light",
+  category: "Web Design",
+  client: "",
+  date: "01, May 2021",
+  projectDetails:
+    "visit site: https://e-wallet-tan.vercel.app",
+    featureList:[]
+       
+ },
+  {
+    title: "Restaurant Page",
+    image: [
+      {
+        slide:
+          "https://i.ibb.co/99dJ9HK/glow-3.png",
+        label: "Restaurant Page",
+        description:
+          "Home Page",
+      },
+    
+    ],
+    color:"light",
+    category: "Web Design",
+    client: "",
+    date: "01, May 2021",
+    projectDetails:
+      "visit site: https://oluwaseun-gbenle.github.io/restaurant-page",
+      featureList:[]
+         
+  },
 ];
+
+
