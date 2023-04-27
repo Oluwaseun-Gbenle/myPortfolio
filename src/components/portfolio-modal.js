@@ -23,7 +23,7 @@ const PortfolioModal = ({showModal,setShowModal,modalNumber}) => {
 
         <div className="row">
 
-          <div className="col-lg-8">
+          <div className="col-lg-7">
             <h2 className="portfolio-title">{modalDetails[modalNumber]?.title}</h2>
             <Carousel>
           {modalDetails[modalNumber]?.image.map((item,idx)=>(
@@ -45,9 +45,9 @@ const PortfolioModal = ({showModal,setShowModal,modalNumber}) => {
 
           </div>
 
-          <div className="col-lg-4 portfolio-info">
-            <h3 className='fw-light'>Project information</h3>
-            <ul className='my-4 h5'>
+          <div className="col-lg-5 portfolio-info">
+            <h3 className='fw-light mx-3 '>Project information</h3>
+            <ul className='my-3 '>
            <div> <strong>Category</strong>:<span className='fw-light'>{modalDetails[modalNumber]?.category}</span></div> <br />
            <div><strong>Client</strong>: <span className='fw-light'>{modalDetails[modalNumber]?.client}</span> </div><br />
            <div> <strong>Project date</strong>:<span className='fw-light'> {modalDetails[modalNumber]?.date}</span></div><br />
@@ -55,14 +55,14 @@ const PortfolioModal = ({showModal,setShowModal,modalNumber}) => {
            </div> }
            </ul>
 
-            <h5 className='fw-light lh-base'>
+            <p className='fw-light lh-base'>
              {modalDetails[modalNumber]?.projectDetails}
             {modalDetails[modalNumber]?.featureList.map((item,idx)=>(
               <ul key={idx}>
                 <li>{item.feature}</li>
               </ul>
              ))}
-            </h5>
+            </p>
           </div>
 
         </div>
