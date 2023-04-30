@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import "./style.css";
 
-const ShootingStar = () => {
+const Stars = () => {
 
   const canvasRef = useRef(null);
 
@@ -69,4 +69,4 @@ const ShootingStar = () => {
   return <canvas ref={canvasRef} />;
 };
 
-export default ShootingStar
+export default Stars

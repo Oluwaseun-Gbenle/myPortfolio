@@ -4,6 +4,7 @@
 body{
   background-color: black;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* .container1{
@@ -170,7 +171,7 @@ font-family: "Poppins",sans-serif;
       
     }
     
-
+  
 
 
 
