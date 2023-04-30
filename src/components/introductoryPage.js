@@ -7,7 +7,7 @@ import About from "./about";
 import { useScrollPosition } from "./scroll-on-y-axis";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
-import ShootingStar from "./shootingstar";
+import Stars from "./stars";
 
 const IntroductoryPage = () => {
   const el = useRef(null);
@@ -55,11 +55,11 @@ const IntroductoryPage = () => {
       <Loader loaderEl={loaderEl} />
       <div id="home" className="container1 " >
         <div> 
-         <ShootingStar/>
+         <Stars/>
           <NavBar scrollPosition={scrollPosition} aboutoffSetTop={aboutoffSetTop} portfolioOffSetTop={portfolioOffSetTop} contactOffSetTop={contactOffSetTop}/>
           <div className="row align-items-center center-text vh-100 on-canvas">
-            <div className="d-flex justify-content-center col-md-6 ">
-              <div className="text-container w-100 text-white">
+            <div className="d-flex justify-content-center  ">
+              <div className="text-container w-100 text-white text-center">
                 <h1 className="fw-bold poppins-font">Gbenle Seun</h1>
                 <h3 className="fw-light">
                   I'm a{" "}
@@ -67,7 +67,7 @@ const IntroductoryPage = () => {
                     {" "}
                   </span>
                 </h3>
-                <div className="d-flex mt-3">
+                <div className="d-flex justify-content-center mt-3">
                   <a href="https://twitter.com/SheywunG" target="_blank" rel="noreferrer" className="twitter social-links">
                     <i className="bi bi-twitter"></i>
                   </a>
