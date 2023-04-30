@@ -7,6 +7,7 @@ import About from "./about";
 import { useScrollPosition } from "./scroll-on-y-axis";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
+import ShootingStar from "./shootingstar";
 
 const IntroductoryPage = () => {
   const el = useRef(null);
@@ -21,6 +22,8 @@ const IntroductoryPage = () => {
   const aboutoffSetTop = about.offsetTop;
   const portfolioOffSetTop = portfolio.offsetTop;
   const contactOffSetTop = contact.offsetTop;
+
+  
 
   useEffect(() => {
     let loader = loaderEl.current;
@@ -50,10 +53,11 @@ const IntroductoryPage = () => {
   return (
     <>
       <Loader loaderEl={loaderEl} />
-      <div id="home" className="container1 ">
-        <div>
+      <div id="home" className="container1 " >
+        <div> 
+         <ShootingStar/>
           <NavBar scrollPosition={scrollPosition} aboutoffSetTop={aboutoffSetTop} portfolioOffSetTop={portfolioOffSetTop} contactOffSetTop={contactOffSetTop}/>
-          <div className="row align-items-center center-text vh-100">
+          <div className="row align-items-center center-text vh-100 on-canvas">
             <div className="d-flex justify-content-center col-md-6 ">
               <div className="text-container w-100 text-white">
                 <h1 className="fw-bold poppins-font">Gbenle Seun</h1>
