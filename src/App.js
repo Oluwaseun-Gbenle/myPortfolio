@@ -17,8 +17,8 @@ const App = () => {
     <>
      <div className="cursor-style">
         <AnimatedCursor
-          innerSize={15}
-          outerSize={15}
+          innerSize={19}
+          outerSize={19}
           color="255, 255 ,255"
           outerAlpha={0.4}
           innerScale={0.7}

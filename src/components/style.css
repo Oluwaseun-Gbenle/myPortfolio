@@ -638,7 +638,7 @@ font-size: 0.8rem;
 # Contact
 --------------------------------------------------------------*/
 #contact,.contact-svg{
-  background-color:#fff ;
+  background-color:#f0f0f0 ;
   color: black;
   font-family: raleway;
 }
@@ -649,11 +649,11 @@ font-size: 0.8rem;
   border: 2px solid #18d26e;
   color: #18d26e;
   padding: 5px 10px;
-  background-color: #fff;
+  background-color: #f0f0f0;
 }
 .submit-button:hover{
   background-color: #18d26e;
-  color: #fff;
+  color: #f0f0f0;
 }
 .raleway-font{
   font-family: "Raleway", sans-serif;
