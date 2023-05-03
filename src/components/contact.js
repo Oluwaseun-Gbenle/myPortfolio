@@ -12,7 +12,7 @@ const Contact = ({contactElement}) => {
         <div id="contact" ref={contactElement} className="py-5">
         <div className=" container">
           <div className="section-title pt-4">
-            <h2 className='fw-bold'>Contact</h2>
+            <h2 className='fw-bold text-center'>Contact</h2>
           </div>
         <div className='d-flex justify-content-center'>
             <div className='contact-input-width'>
@@ -28,7 +28,7 @@ const Contact = ({contactElement}) => {
                 Your message was sent successfully. Thanks!<span id="close" className="mdi mdi-close"></span>
               </div> */}
             </div>
-            <div className='d-flex justify-content-end'>
+            <div className='d-flex justify-content-center'>
             <input className="button submit-button mt-3"  type="submit" id="submit" value="SUBMIT"/>
             </div>
           </form>

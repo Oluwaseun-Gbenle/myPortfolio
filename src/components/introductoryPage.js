@@ -37,7 +37,7 @@ const IntroductoryPage = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["software engineer", "software developer"],
+      strings: ["software developer","software engineer"],
       startDelay: 2000,
       typeSpeed: 100,
       backSpeed: 100,

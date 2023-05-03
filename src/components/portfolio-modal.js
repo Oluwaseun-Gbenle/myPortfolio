@@ -1,9 +1,9 @@
 import React from 'react'
 import { Carousel, Modal } from 'react-bootstrap'
 import { modalDetails } from './portfolio-details/modal-details'
+import AnimatedCursor from 'react-animated-cursor'
 
 const PortfolioModal = ({showModal,setShowModal,modalNumber}) => {
-  
   return (
     <>
     <Modal
@@ -13,8 +13,18 @@ const PortfolioModal = ({showModal,setShowModal,modalNumber}) => {
     style={{opacity:'1'}}
     centered
   >
-  
     <Modal.Body className=''>
+   { showModal &&<div className="cursor-style">
+        <AnimatedCursor
+          innerSize={19}
+          outerSize={19}
+          color="252, 248 ,250"
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
+      </div>
+}
       <div className='d-flex justify-content-end m-4'>
       <div onClick={()=> setShowModal(false)} type="button" className="btn-close btn-close-white"></div>
    </div>

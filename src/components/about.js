@@ -5,7 +5,7 @@ const About = ({ aboutElement }) => {
     <>
       <div id="about" ref={aboutElement} className="pt-5 text-light">
         <div className="about-me container">
-          <div className="section-title pt-4">
+          <div className="section-title py-4 text-center">
             <h2>About</h2>
           </div>
 

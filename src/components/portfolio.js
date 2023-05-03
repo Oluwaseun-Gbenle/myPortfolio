@@ -13,7 +13,7 @@ const Portfolio = ({ portfolioElement }) => {
         className="cont-padding text-light"
       >
         <div className="container">
-          <div className="section-title pt-4">
+          <div className="section-title py-4 text-center">
             <h2>Portfolio</h2>
           </div>
 
