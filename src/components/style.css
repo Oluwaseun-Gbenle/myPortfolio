@@ -518,7 +518,7 @@ font-size: 0.8rem;
 }
 
 .cursor-style{
-  z-index: 999 !important;
+  z-index: 9999999 !important;
 }
 /*--------------------------------------------------------------
 # About
