@@ -4,7 +4,6 @@ import { modalDetails } from './portfolio-details/modal-details'
 import AnimatedCursor from 'react-animated-cursor'
 
 const PortfolioModal = ({showModal,setShowModal,modalNumber}) => {
-  console.log("showModal",showModal);
   return (
     <>
     <Modal
