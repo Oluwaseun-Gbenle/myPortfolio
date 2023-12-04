@@ -157,8 +157,19 @@ export const modalDetails = [
     title: "E-wallet",
     image: [
       {
-        slide: "https://i.ibb.co/V2Cpg96/glow-2.png",
-        label: "Wallet Page",
+        slide: "https://i.ibb.co/vZPsTGF/glow-2.png",
+        label: "Transfer Page",
+        description:"Client can tranfer money to third party accounts"
+      },
+      {
+        slide: "https://i.ibb.co/cyWtFHL/glow-5.png",
+        label: "Confirmation Page",
+        description:"Clent needs to confirm if he wants to go through the transfer process"
+      },
+      {
+        slide: "https://i.ibb.co/fnmYHx0/glow-4.png",
+        label: "Sent modal",
+        description:"Modal to verify amount has been sent"
       },
     ],
     color: "light",
