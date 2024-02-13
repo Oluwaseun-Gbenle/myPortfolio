@@ -19,7 +19,7 @@ export const modalDetails = [
       },
     ],
     color: "dark",
-    category: "Web Design",
+    category: "Web Application",
     client: "Flavetech",
     date: "01, May 2022",
     projectDetails:
@@ -61,7 +61,7 @@ export const modalDetails = [
       },
     ],
     color: "light",
-    category: "Web Design",
+    category: "Web Application",
     client: "Flavetech",
     date: "01, May 2022",
     projectDetails:
@@ -98,7 +98,7 @@ export const modalDetails = [
       },
     ],
     color: "light",
-    category: "Web Design",
+    category: "Web Application",
     client: "Flavetech",
     date: "01, May 2022",
     projectDetails: "This Web Service Application provides a way of exchanging data and functionality between different applications.",
@@ -146,7 +146,7 @@ export const modalDetails = [
     ],
     color: "light",
     textBg:"gray",
-    category: "Web Design",
+    category: "Web Application",
     client: "The yutes",
     date: "January 2020",
     projectDetails: "",
@@ -173,7 +173,7 @@ export const modalDetails = [
       },
     ],
     color: "light",
-    category: "Web Design",
+    category: "Web Application",
     client: "",
     date: "01, May 2021",
     projectDetails: "",
@@ -210,11 +210,62 @@ export const modalDetails = [
       },
     ],
     color: "light",
-    category: "Web Design",
+    category: "Mobile Application",
     client: "",
-    date: "01, May 2021",
+    date: "01, September 2023",
     projectDetails: "",
     featureList: [],
+  },
+  {
+    title: "ArbitAI",
+    image: [
+      {
+        slide: "https://i.ibb.co/F845vNT/Untitled-design.png",
+        label: "Home Page",
+        description: "",
+      },
+      {
+        slide: "https://i.ibb.co/K042CRR/3-2.png",
+        label: "Ambassador Page",
+        description: "",
+      },
+      {
+        slide: "https://i.ibb.co/zGYQ7NS/2.png",
+        label: "Staking Page",
+        description: "",
+      },
+      {
+        slide: "https://i.ibb.co/Rb5mr2g/Untitled-design-1.png",
+        label: "Affiliate Page",
+        description: "",
+      },
+      {
+        slide: "https://i.ibb.co/3mPy8Vv/3-5.png",
+        label: "Privacy Policy",
+        description: "Subjects available in a session being edited in the Staff/Teachers Portal ",
+      },
+    ],
+    color: "dark",
+    category: "Web Application",
+    client: "ArbitAI",
+    site:"https://sweet-salmiakki-82d31e.netlify.app/",
+    date: "08, January 2024",
+    projectDetails:
+      "",
+    featureList: [
+      {
+        feature:
+          "",
+      },
+      {
+        feature:
+          "",
+      },
+      {
+        feature:
+          "",
+      },
+    ],
   },
 
   {
@@ -227,7 +278,7 @@ export const modalDetails = [
       },
     ],
     color: "light",
-    category: "Web Design",
+    category: "Web Application",
     client: "",
     date: "01, May 2021",
     site:"https://oluwaseun-gbenle.github.io/restaurant-page",
