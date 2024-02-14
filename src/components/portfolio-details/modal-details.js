@@ -242,7 +242,7 @@ export const modalDetails = [
       {
         slide: "https://i.ibb.co/3mPy8Vv/3-5.png",
         label: "Privacy Policy",
-        description: "Subjects available in a session being edited in the Staff/Teachers Portal ",
+        description: "",
       },
     ],
     color: "dark",
@@ -252,20 +252,7 @@ export const modalDetails = [
     date: "08, January 2024",
     projectDetails:
       "",
-    featureList: [
-      {
-        feature:
-          "",
-      },
-      {
-        feature:
-          "",
-      },
-      {
-        feature:
-          "",
-      },
-    ],
+    featureList: [],
   },
 
   {
