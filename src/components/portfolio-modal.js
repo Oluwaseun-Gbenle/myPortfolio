@@ -34,7 +34,7 @@ const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
           <div id="portfolio-details" className="portfolio-details">
             <div className="mx-5 mb-5">
               <div className="row">
-                <div className="col-lg-7 relative">
+                <div className="col-lg-7 relative mb-3">
                   <h2 className="portfolio-title mb-3">{modalDetails[modalNumber]?.title}</h2>
                   <Carousel>
                     {modalDetails[modalNumber]?.image.map((item, idx) => (
