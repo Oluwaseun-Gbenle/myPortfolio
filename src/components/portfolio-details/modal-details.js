@@ -25,16 +25,16 @@ export const modalDetails = [
       {
         slide: "https://i.ibb.co/XVnwJS1/Untitled-design-8.png",
         label: "Privacy Policy",
-        description: "This document outlines the commitment to protecting personal information during the exploration of a diverse range of products.",
+        description:
+          "This document outlines the commitment to protecting personal information during the exploration of a diverse range of products.",
       },
     ],
     color: "dark",
     category: "Web Application",
     client: "ArbitAI",
-    site:"https://sweet-salmiakki-82d31e.netlify.app",
+    site: "https://sweet-salmiakki-82d31e.netlify.app",
     date: "08, Feburary 2024",
-    projectDetails:
-      "",
+    projectDetails: "",
     featureList: [],
   },
 
@@ -49,7 +49,7 @@ export const modalDetails = [
       {
         slide: "https://i.ibb.co/0ZcjKMZ/Untitled-design-3.png",
         label: "Home Page 2",
-        description: "Focuses on ease of navigation, and showcasing a wide range of products."
+        description: "Focuses on ease of navigation, and showcasing a wide range of products.",
       },
       {
         slide: "https://i.ibb.co/N9ztSgH/Untitled-design-4.png",
@@ -70,10 +70,9 @@ export const modalDetails = [
     color: "stroke",
     category: "Web Application",
     client: "Reeple",
-    site:"https://www.reeple.ai",
+    site: "https://www.reeple.ai",
     date: "08, January 2024",
-    projectDetails:
-      "",
+    projectDetails: "",
     featureList: [],
   },
   {
@@ -234,17 +233,17 @@ export const modalDetails = [
       {
         slide: "https://i.ibb.co/KNpYJ7K/glow-5.png",
         label: "Sign up Page",
-        description:"A registration page for shoppers"
+        description: "A registration page for shoppers",
       },
-       {
+      {
         slide: "https://i.ibb.co/3vrR3Dk/glow-3.png",
         label: "Merchant Sign Up",
-        description:"A registration page for merchants"
+        description: "A registration page for merchants",
       },
       {
         slide: "https://i.ibb.co/zG3y7K7/glow-6.png",
         label: "Login Page",
-        description:"A sign in page for shoppers and merchants"
+        description: "A sign in page for shoppers and merchants",
       },
       {
         slide: "https://i.ibb.co/n1BhDks/glow-17.png",
@@ -254,12 +253,11 @@ export const modalDetails = [
       {
         slide: "https://i.ibb.co/JxhwZmq/glow-2.png",
         label: "About",
-        description:"convey the brand's story, values, and mission",
+        description: "convey the brand's story, values, and mission",
       },
-    
     ],
     color: "stroke",
-    textBg:"gray",
+    textBg: "gray",
     category: "Web Application",
     client: "The yutes",
     date: "January 2020",
@@ -273,17 +271,17 @@ export const modalDetails = [
       {
         slide: "https://i.ibb.co/vZPsTGF/glow-2.png",
         label: "Transfer Page",
-        description:"Client can tranfer money to third party accounts"
+        description: "Client can tranfer money to third party accounts",
       },
       {
         slide: "https://i.ibb.co/cyWtFHL/glow-5.png",
         label: "Confirmation Page",
-        description:"Clent needs to confirm if he wants to go through the transfer process"
+        description: "Clent needs to confirm if he wants to go through the transfer process",
       },
       {
         slide: "https://i.ibb.co/fnmYHx0/glow-4.png",
         label: "Sent modal",
-        description:"Modal to verify amount has been sent"
+        description: "Modal to verify amount has been sent",
       },
     ],
     color: "light",
@@ -291,7 +289,7 @@ export const modalDetails = [
     client: "",
     date: "01, May 2021",
     projectDetails: "",
-    site:" https://e-wallet-tan.vercel.app",
+    site: " https://e-wallet-tan.vercel.app",
     featureList: [],
   },
 
@@ -308,7 +306,7 @@ export const modalDetails = [
     category: "Web Application",
     client: "",
     date: "01, May 2021",
-    site:"https://oluwaseun-gbenle.github.io/restaurant-page",
+    site: "https://oluwaseun-gbenle.github.io/restaurant-page",
     projectDetails: "",
     featureList: [],
   },
