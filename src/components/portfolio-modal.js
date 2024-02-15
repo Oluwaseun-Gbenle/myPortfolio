@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Carousel, Modal } from "react-bootstrap";
 import { modalDetails } from "./portfolio-details/modal-details";
 import AnimatedCursor from "react-animated-cursor";
 
 const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
-  console.log(modalDetails[3]?.textBg);
+  const textColor = modalDetails[modalNumber]?.color === "light"? "text-dark":modalDetails[modalNumber]?.color === "stroke" ? "text-stroke text-dark":"text-white"
+  useEffect(() => {
+    const stopPropagation = (event) => {
+      if (event.target.closest('.carousel-control-next') || event.target.closest('.carousel-control-prev')) {
+        event.stopPropagation();
+      }
+    };
+  
+    document.addEventListener('click', stopPropagation);
+  
+    return () => {
+      document.removeEventListener('click', stopPropagation);
+    };
+  }, []);
+  
+  
   return (
     <>
-      <Modal show={showModal} onHide={() => setShowModal(false)} dialogClassName="modal-90w " style={{ opacity: "1" }} centered>
-        <div onClick={() => setShowModal(false)} type="button" className="btn-close btn-close-white m-4 "></div>
-
+      <Modal show={showModal} onHide={(event) => {event.stopPropagation(); setShowModal(false)}} dialogClassName="modal-90w " style={{ opacity: "1" }} centered>
+        <div onClick={() => setShowModal(false)} type="button" className="btn-close btn-close-white  m-4 "></div>
         <Modal.Body className="">
           {showModal && (
             <div className="cursor-style">
@@ -20,15 +34,15 @@ const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
           <div id="portfolio-details" className="portfolio-details">
             <div className="mx-5 mb-5">
               <div className="row">
-                <div className="col-lg-7">
-                  <h2 className="portfolio-title">{modalDetails[modalNumber]?.title}</h2>
+                <div className="col-lg-7 relative">
+                  <h2 className="portfolio-title mb-3">{modalDetails[modalNumber]?.title}</h2>
                   <Carousel>
                     {modalDetails[modalNumber]?.image.map((item, idx) => (
                       <Carousel.Item key={idx}>
                         <img className="d-block w-100" src={item.slide} alt={item.label} />
-                        <Carousel.Caption className={`${modalDetails[modalNumber]?.color === "light" && "text-dark"}`}>
-                          <h3 className={`${modalDetails[modalNumber]?.textBg === "gray" && "bg-light"}`}>{item.label}</h3>
-                          <p className={`${modalDetails[modalNumber]?.textBg === "gray" && "bg-light"}`}>{item.description}</p>
+                        <Carousel.Caption className={`${textColor}`}>
+                          <h3>{item.label}</h3>
+                          <p>{item.description}</p>
                         </Carousel.Caption>
                       </Carousel.Item>
                     ))}
@@ -36,12 +50,11 @@ const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
                 </div>
 
                 <div className="col-lg-5 portfolio-info">
-                  <h3 className=" mx-3 ">Project information</h3>
+                  <h3 className=" mx-3">Project information</h3>
                   <ul className="my-3 ">
                     <div>
-                      {" "}
                       <strong>Category</strong>:<span className="fw-light"> {modalDetails[modalNumber]?.category}</span>
-                    </div>{" "}
+                    </div>
                     <br />
                     <div>
                       <strong>Client</strong>:<span className="fw-light"> {modalDetails[modalNumber]?.client}</span>{" "}
@@ -63,21 +76,21 @@ const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
                   </ul>
 
                   {modalDetails[modalNumber]?.site && (
-                    <div className="d-flex flex-row">
+                    <div className="d-flex flex-row mx-4">
                       <p>Visit site: </p>
                       <a className="fw-light lh-base ms-2" target="_blank" rel="noopener noreferrer" href={modalDetails[modalNumber]?.site}>
                         {modalDetails[modalNumber]?.site}
                       </a>
                     </div>
                   )}
-                  <p className="fw-light lh-base">
+                  <div className="fw-light lh-base">
                     {modalDetails[modalNumber]?.projectDetails}
                     {modalDetails[modalNumber]?.featureList.map((item, idx) => (
                       <ul key={idx}>
                         <li>{item.feature}</li>
                       </ul>
                     ))}
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,5 +1,81 @@
 export const modalDetails = [
   {
+    title: "ArbitAI",
+    image: [
+      {
+        slide: "https://i.ibb.co/F845vNT/Untitled-design.png",
+        label: "Home Page",
+        description: "Focuses on ease of navigation, and showcasing a wide range of products.",
+      },
+      {
+        slide: "https://i.ibb.co/K042CRR/3-2.png",
+        label: "Ambassador Page",
+        description: "This page helps discover the opportunity to represent the company as an ambassador. ",
+      },
+      {
+        slide: "https://i.ibb.co/zGYQ7NS/2.png",
+        label: "Staking Page",
+        description: "Here, users can participate in staking, a process that involves locking up a certain amount of cryptocurrency",
+      },
+      {
+        slide: "https://i.ibb.co/Rb5mr2g/Untitled-design-1.png",
+        label: "Affiliate Page",
+        description: "this page offers opportunity for users to earn commissions",
+      },
+      {
+        slide: "https://i.ibb.co/XVnwJS1/Untitled-design-8.png",
+        label: "Privacy Policy",
+        description:
+          "This document outlines the commitment to protecting personal information during the exploration of a diverse range of products.",
+      },
+    ],
+    color: "dark",
+    category: "Web Application",
+    client: "ArbitAI",
+    site: "https://sweet-salmiakki-82d31e.netlify.app",
+    date: "08, Feburary 2024",
+    projectDetails: "",
+    featureList: [],
+  },
+
+  {
+    title: "Reeple",
+    image: [
+      {
+        slide: "https://i.ibb.co/Rpv2mbb/Untitled-design-2.png",
+        label: "Home Page 1",
+        description: "Focuses on ease of navigation, and showcasing a wide range of products.",
+      },
+      {
+        slide: "https://i.ibb.co/0ZcjKMZ/Untitled-design-3.png",
+        label: "Home Page 2",
+        description: "Focuses on ease of navigation, and showcasing a wide range of products.",
+      },
+      {
+        slide: "https://i.ibb.co/N9ztSgH/Untitled-design-4.png",
+        label: "Home Page 3",
+        description: "Focuses on ease of navigation, and showcasing a wide range of products.",
+      },
+      {
+        slide: "https://i.ibb.co/P5kgrZD/Untitled-design-7.png",
+        label: "Blog Page",
+        description: "This blog page is a go-to source for articles and posts ",
+      },
+      {
+        slide: "https://i.ibb.co/5vvdscn/Untitled-design-6.png",
+        label: "Single Blog Post",
+        description: "This blog post offers a deep dive into each item in blog page",
+      },
+    ],
+    color: "stroke",
+    category: "Web Application",
+    client: "Reeple",
+    site: "https://www.reeple.ai",
+    date: "08, January 2024",
+    projectDetails: "",
+    featureList: [],
+  },
+  {
     title: "School Management Portal",
     image: [
       {
@@ -115,22 +191,59 @@ export const modalDetails = [
   },
 
   {
+    title: "Meeting People",
+    image: [
+      {
+        slide: "https://i.ibb.co/85bh21T/glow-12.png",
+        label: "Sign Up Page",
+        description: "A registration page for users",
+      },
+      {
+        slide: "https://i.ibb.co/2ZQgQBR/glow-13.png",
+        label: "Sign In Page",
+        description: "A Login Page for users",
+      },
+      {
+        slide: "https://i.ibb.co/2v8D1tJ/glow-14.png",
+        label: "Chat Lobby",
+        description: "A page to enable users generate new chats and view current friends",
+      },
+      {
+        slide: "https://i.ibb.co/z8fjgDj/glow-15.png",
+        label: "Chat Page",
+        description: "A page to chat with friends",
+      },
+      {
+        slide: "https://i.ibb.co/ZcYskHy/glow-16.png",
+        label: "Profile Page",
+        description: "A page to edit what other users can view about client",
+      },
+    ],
+    color: "light",
+    category: "Mobile Application",
+    client: "",
+    date: "01, September 2023",
+    projectDetails: "",
+    featureList: [],
+  },
+
+  {
     title: "The yutes site",
     image: [
       {
         slide: "https://i.ibb.co/KNpYJ7K/glow-5.png",
         label: "Sign up Page",
-        description:"A registration page for shoppers"
+        description: "A registration page for shoppers",
       },
-       {
+      {
         slide: "https://i.ibb.co/3vrR3Dk/glow-3.png",
         label: "Merchant Sign Up",
-        description:"A registration page for merchants"
+        description: "A registration page for merchants",
       },
       {
         slide: "https://i.ibb.co/zG3y7K7/glow-6.png",
         label: "Login Page",
-        description:"A sign in page for shoppers and merchants"
+        description: "A sign in page for shoppers and merchants",
       },
       {
         slide: "https://i.ibb.co/n1BhDks/glow-17.png",
@@ -140,12 +253,11 @@ export const modalDetails = [
       {
         slide: "https://i.ibb.co/JxhwZmq/glow-2.png",
         label: "About",
-        description:"convey the brand's story, values, and mission",
+        description: "convey the brand's story, values, and mission",
       },
-    
     ],
-    color: "light",
-    textBg:"gray",
+    color: "stroke",
+    textBg: "gray",
     category: "Web Application",
     client: "The yutes",
     date: "January 2020",
@@ -159,17 +271,17 @@ export const modalDetails = [
       {
         slide: "https://i.ibb.co/vZPsTGF/glow-2.png",
         label: "Transfer Page",
-        description:"Client can tranfer money to third party accounts"
+        description: "Client can tranfer money to third party accounts",
       },
       {
         slide: "https://i.ibb.co/cyWtFHL/glow-5.png",
         label: "Confirmation Page",
-        description:"Clent needs to confirm if he wants to go through the transfer process"
+        description: "Clent needs to confirm if he wants to go through the transfer process",
       },
       {
         slide: "https://i.ibb.co/fnmYHx0/glow-4.png",
         label: "Sent modal",
-        description:"Modal to verify amount has been sent"
+        description: "Modal to verify amount has been sent",
       },
     ],
     color: "light",
@@ -177,95 +289,8 @@ export const modalDetails = [
     client: "",
     date: "01, May 2021",
     projectDetails: "",
-    site:" https://e-wallet-tan.vercel.app",
+    site: " https://e-wallet-tan.vercel.app",
     featureList: [],
-  },
-  {
-    title: "Meeting People",
-    image: [
-      {
-        slide: "https://i.ibb.co/85bh21T/glow-12.png",
-        label: "Chat Lobby",
-        description: "Home Page",
-      },
-      {
-        slide: "https://i.ibb.co/2ZQgQBR/glow-13.png",
-        label: "Chat Lobby",
-        description: "Home Page",
-      },
-      {
-        slide: "https://i.ibb.co/2v8D1tJ/glow-14.png",
-        label: "Chat Lobby",
-        description: "Home Page",
-      },
-      {
-        slide: "https://i.ibb.co/z8fjgDj/glow-15.png",
-        label: "Chat Lobby",
-        description: "Home Page",
-      },
-      {
-        slide: "https://i.ibb.co/ZcYskHy/glow-16.png",
-        label: "Chat Lobby",
-        description: "Home Page",
-      },
-    ],
-    color: "light",
-    category: "Mobile Application",
-    client: "",
-    date: "01, September 2023",
-    projectDetails: "",
-    featureList: [],
-  },
-  {
-    title: "ArbitAI",
-    image: [
-      {
-        slide: "https://i.ibb.co/F845vNT/Untitled-design.png",
-        label: "Home Page",
-        description: "",
-      },
-      {
-        slide: "https://i.ibb.co/K042CRR/3-2.png",
-        label: "Ambassador Page",
-        description: "",
-      },
-      {
-        slide: "https://i.ibb.co/zGYQ7NS/2.png",
-        label: "Staking Page",
-        description: "",
-      },
-      {
-        slide: "https://i.ibb.co/Rb5mr2g/Untitled-design-1.png",
-        label: "Affiliate Page",
-        description: "",
-      },
-      {
-        slide: "https://i.ibb.co/3mPy8Vv/3-5.png",
-        label: "Privacy Policy",
-        description: "Subjects available in a session being edited in the Staff/Teachers Portal ",
-      },
-    ],
-    color: "dark",
-    category: "Web Application",
-    client: "ArbitAI",
-    site:"https://sweet-salmiakki-82d31e.netlify.app/",
-    date: "08, January 2024",
-    projectDetails:
-      "",
-    featureList: [
-      {
-        feature:
-          "",
-      },
-      {
-        feature:
-          "",
-      },
-      {
-        feature:
-          "",
-      },
-    ],
   },
 
   {
@@ -277,11 +302,11 @@ export const modalDetails = [
         description: "Home Page",
       },
     ],
-    color: "light",
+    color: "stroke",
     category: "Web Application",
     client: "",
     date: "01, May 2021",
-    site:"https://oluwaseun-gbenle.github.io/restaurant-page",
+    site: "https://oluwaseun-gbenle.github.io/restaurant-page",
     projectDetails: "",
     featureList: [],
   },
