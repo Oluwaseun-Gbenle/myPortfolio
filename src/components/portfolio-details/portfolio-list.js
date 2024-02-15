@@ -1,8 +1,8 @@
 export const portfolioList = [
-    {images:'https://i.ibb.co/F845vNT/Untitled-design.png',title:'ArbitAI'},
-    {images:'https://i.ibb.co/CzNLDXd/Untitled-design-5.png',title:'Reeple'},
+    {images:'https://i.ibb.co/Y7XkGJD/glow-8.png',title:'ArbitAI'},
+    {images:'https://i.ibb.co/7ysVdpd/glow-9.png',title:'Reeple'},
     {images:'https://i.ibb.co/8P9d09K/Untitled-design-4.png',title:'School Management Portal'},
-    {images:'https://i.ibb.co/FzJQrfT/Untitled-design.png',title:'Computer Based Test'},
+    {images:'https://i.ibb.co/b6m11LT/glow-10.png',title:'Computer Based Test'},
     {images:'https://i.ibb.co/b3d0Q0W/Untitled-design-9.png',title:'Flavetech Web Services'},
     {images:'https://i.ibb.co/ydVLcMb/glow-7.png',title:'Meeting People'},
     {images:'https://i.ibb.co/WHj2Wj8/glow.png',title:'The Yutes'},

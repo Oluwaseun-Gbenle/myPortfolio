@@ -14,8 +14,8 @@ const Contact = ({contactElement}) => {
           <div className="section-title pt-4">
             <h2 className='fw-bold text-center'>Contact</h2>
           </div>
-        <div className='d-flex justify-content-center'>
-            <div className='contact-input-width'>
+        <div className='center-contact'>
+            <div>
           <div className="fw-bold  raleway-font text-center"data-aos='slide-right'data-delay="0.5s"   >
             Have a question or want to work together?
           </div>
@@ -24,9 +24,7 @@ const Contact = ({contactElement}) => {
             <div className=""><input  className='bg-dark w-100  p-2 text-light' placeholder="Enter email" type="email" name="email" required=""/></div>
             <textarea className='bg-dark  p-2 textarea-height text-light w-100' placeholder="Your Message" type="text" name="message"></textarea>
             <div id="success">
-              {/* <div>
-                Your message was sent successfully. Thanks!<span id="close" className="mdi mdi-close"></span>
-              </div> */}
+           
             </div>
             <div className='d-flex justify-content-center'>
             <input className="button submit-button mt-3"  type="submit" id="submit" value="SUBMIT"/>

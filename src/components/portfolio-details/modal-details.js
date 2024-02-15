@@ -3,27 +3,27 @@ export const modalDetails = [
     title: "ArbitAI",
     image: [
       {
-        slide: "https://i.ibb.co/F845vNT/Untitled-design.png",
+        slide: "https://i.ibb.co/WtXDtTK/glow-8.png",
         label: "Home Page",
         description: "Focuses on ease of navigation, and showcasing a wide range of products.",
       },
       {
-        slide: "https://i.ibb.co/K042CRR/3-2.png",
+        slide: "https://i.ibb.co/HKQzW8F/glow-12.png",
         label: "Ambassador Page",
         description: "This page helps discover the opportunity to represent the company as an ambassador. ",
       },
       {
-        slide: "https://i.ibb.co/zGYQ7NS/2.png",
+        slide: "https://i.ibb.co/kgwnFSm/glow-8.png",
         label: "Staking Page",
         description: "Here, users can participate in staking, a process that involves locking up a certain amount of cryptocurrency",
       },
       {
-        slide: "https://i.ibb.co/Rb5mr2g/Untitled-design-1.png",
+        slide: "https://i.ibb.co/mDHZhrX/glow-7.png",
         label: "Affiliate Page",
         description: "this page offers opportunity for users to earn commissions",
       },
       {
-        slide: "https://i.ibb.co/XVnwJS1/Untitled-design-8.png",
+        slide: "https://i.ibb.co/qRg14jT/glow-9.png",
         label: "Privacy Policy",
         description:
           "This document outlines the commitment to protecting personal information during the exploration of a diverse range of products.",
@@ -42,27 +42,27 @@ export const modalDetails = [
     title: "Reeple",
     image: [
       {
-        slide: "https://i.ibb.co/Rpv2mbb/Untitled-design-2.png",
+        slide: "https://i.ibb.co/0XwXYHt/glow-8.png",
         label: "Home Page 1",
         description: "Focuses on ease of navigation, and showcasing a wide range of products.",
       },
       {
-        slide: "https://i.ibb.co/0ZcjKMZ/Untitled-design-3.png",
+        slide: "https://i.ibb.co/hgwp2vd/glow-7.png",
         label: "Home Page 2",
         description: "Focuses on ease of navigation, and showcasing a wide range of products.",
       },
       {
-        slide: "https://i.ibb.co/N9ztSgH/Untitled-design-4.png",
+        slide: "https://i.ibb.co/f8wGG4W/glow-13.png",
         label: "Home Page 3",
         description: "Focuses on ease of navigation, and showcasing a wide range of products.",
       },
       {
-        slide: "https://i.ibb.co/P5kgrZD/Untitled-design-7.png",
+        slide: "https://i.ibb.co/zNK0RmT/glow-11.png",
         label: "Blog Page",
         description: "This blog page is a go-to source for articles and posts ",
       },
       {
-        slide: "https://i.ibb.co/5vvdscn/Untitled-design-6.png",
+        slide: "https://i.ibb.co/f8wGG4W/glow-13.png",
         label: "Single Blog Post",
         description: "This blog post offers a deep dive into each item in blog page",
       },
