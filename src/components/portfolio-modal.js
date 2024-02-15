@@ -1,48 +1,32 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Carousel, Modal } from "react-bootstrap";
 import { modalDetails } from "./portfolio-details/modal-details";
 import AnimatedCursor from "react-animated-cursor";
 
 const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
-  const textColor = modalDetails[modalNumber]?.color === "light"? "text-dark":modalDetails[modalNumber]?.color === "stroke" ? "text-stroke text-dark":"text-white"
-  useEffect(() => {
-    const stopPropagation = (event) => {
-      if (event.target.closest('.carousel-control-next') || event.target.closest('.carousel-control-prev')) {
-        event.stopPropagation();
-      }
-    };
-  
-    document.addEventListener('click', stopPropagation);
-  
-    return () => {
-      document.removeEventListener('click', stopPropagation);
-    };
-  }, []);
-  
+  const textColor = modalDetails[modalNumber]?.color === "light"? "text-dark":modalDetails[modalNumber]?.color === "stroke" ? "text-stroke text-white":"text-white"
   
   return (
     <>
-      <Modal show={showModal} onHide={(event) => {event.stopPropagation(); setShowModal(false)}} dialogClassName="modal-90w " style={{ opacity: "1" }} centered>
-        <div onClick={() => setShowModal(false)} type="button" className="btn-close btn-close-white  m-4 "></div>
+      <Modal show={showModal} onHide={() =>  setShowModal(false)} dialogClassName="modal-width" centered>
+        <div onClick={() => setShowModal(false)} type="button" className="btn-close btn-close-white  mx-4 mt-4"></div>
         <Modal.Body className="">
-          {showModal && (
             <div className="cursor-style">
-              <AnimatedCursor innerSize={19} outerSize={19} color="252, 248 ,250" outerAlpha={0.4} innerScale={0.7} outerScale={5} />
+              <AnimatedCursor innerSize={19} outerSize={19}  color="24, 210 ,110" outerAlpha={0.4} innerScale={0.7} outerScale={5} />
             </div>
-          )}
           <div className="d-flex justify-content-end"></div>
           <div id="portfolio-details" className="portfolio-details">
-            <div className="mx-5 mb-5">
+            <div className="modal-padding mb-5">
               <div className="row">
-                <div className="col-lg-7 relative">
+                <div className="col-lg-7 relative mb-5">
                   <h2 className="portfolio-title mb-3">{modalDetails[modalNumber]?.title}</h2>
                   <Carousel>
                     {modalDetails[modalNumber]?.image.map((item, idx) => (
                       <Carousel.Item key={idx}>
-                        <img className="d-block w-100" src={item.slide} alt={item.label} />
+                        <img className="d-block carousel-img-container" src={item.slide} alt={item.label} />
                         <Carousel.Caption className={`${textColor}`}>
-                          <h3>{item.label}</h3>
-                          <p>{item.description}</p>
+                          <div className="carousel-label">{item.label}</div>
+                          <p className="carousel-desc">{item.description}</p>
                         </Carousel.Caption>
                       </Carousel.Item>
                     ))}
@@ -50,7 +34,7 @@ const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
                 </div>
 
                 <div className="col-lg-5 portfolio-info">
-                  <h3 className=" mx-3">Project information</h3>
+                  <h2 className=" mx-3">Project information</h2>
                   <ul className="my-3 ">
                     <div>
                       <strong>Category</strong>:<span className="fw-light"> {modalDetails[modalNumber]?.category}</span>

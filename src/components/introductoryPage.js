@@ -55,7 +55,9 @@ const IntroductoryPage = () => {
       <Loader loaderEl={loaderEl} />
       <div id="home" className="container1 " >
         <div> 
+          <div className="">
          <Stars/>
+         </div>
           <NavBar scrollPosition={scrollPosition} aboutoffSetTop={aboutoffSetTop} portfolioOffSetTop={portfolioOffSetTop} contactOffSetTop={contactOffSetTop}/>
           <div className="row align-items-center center-text vh-100 on-canvas">
             <div className="d-flex justify-content-center  ">
