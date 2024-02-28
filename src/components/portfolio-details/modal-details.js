@@ -32,7 +32,7 @@ export const modalDetails = [
     color: "dark",
     category: "Web Application",
     client: "ArbitAI",
-    site: "https://sweet-salmiakki-82d31e.netlify.app",
+    site: "https://arbitai.com",
     date: "08, Feburary 2024",
     projectDetails: "",
     featureList: [],
