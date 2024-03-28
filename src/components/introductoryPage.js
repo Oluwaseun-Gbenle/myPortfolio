@@ -62,7 +62,7 @@ const IntroductoryPage = () => {
           <div className="row align-items-center center-text vh-100 on-canvas">
             <div className="d-flex justify-content-center  ">
               <div className="text-container w-100 text-white text-center">
-                <h1 className="fw-bold poppins-font">Gbenle Seun</h1>
+                <h1 className="fw-bold poppins-font">Seun Gbenle</h1>
                 <h3 className="fw-light">
                   I'm a{" "}
                   <span className="underline-text" ref={el}>
