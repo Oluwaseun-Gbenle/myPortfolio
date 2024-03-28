@@ -100,6 +100,7 @@ export const modalDetails = [
     date: "01, May 2022",
     projectDetails:
       "The school management portal  facilitates the management of various operations within educational institutions such as schools, colleges, and universities. It is designed to streamline administrative tasks and improve communication among administrators, teachers, students, and parents. It also has a feature that allows users switch themes as it suits them.",
+    site:"https://smpdemo.flaveconsole.com",
     featureList: [
       {
         feature:
@@ -142,7 +143,8 @@ export const modalDetails = [
     date: "01, May 2022",
     projectDetails:
       "The computer basted test provides efficient method for administering tests and assessments in various settings, offering convenience, flexibility, and data-driven insights for educators, administrators, and test-takers alike.",
-    featureList: [
+    site:"https://cbt.flaveconsole.com",
+      featureList: [
       {
         feature:
           "Examiner Section:  This is designed to facilitate the creation, administration, and analysis of tests by examiners. It includes features such as test creation and customization, test administration and scheduling, test customization and reusability, and user management, to support examiners in effectively managing the testing process.",
@@ -178,6 +180,7 @@ export const modalDetails = [
     client: "Flavetech",
     date: "01, May 2022",
     projectDetails: "This Web Service Application provides a way of exchanging data and functionality between different applications.",
+    site: "https://www.flaveconsole.com",
     featureList: [
       {
         feature:
