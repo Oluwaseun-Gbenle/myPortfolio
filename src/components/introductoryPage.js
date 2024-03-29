@@ -70,7 +70,7 @@ const IntroductoryPage = () => {
                   </span>
                 </h3>
                 <div className="d-flex justify-content-center mt-3">
-                  <a href="https://twitter.com/SheywunG" target="_blank" rel="noreferrer" className="twitter social-links">
+                  <a href="https://twitter.com/SeunGbenle" target="_blank" rel="noreferrer" className="twitter social-links">
                     <i className="bi bi-twitter"></i>
                   </a>
                   <a href="https://github.com/Oluwaseun-Gbenle" target="_blank" rel="noreferrer" className="github social-links">
