@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const NavBar = (props) => {
   return (
@@ -34,7 +34,7 @@ const NavBar = (props) => {
             <li>
               <a
                 className={`nav-link scrollto ${
-                  props.scrollPosition >= (props.portfolioOffSetTop-200)  && props.scrollPosition < (props.contactOffSetTop-200) && "active"
+                  props.scrollPosition >= (props.portfolioOffSetTop-200)  && props.scrollPosition < (props.contactOffSetTop-800) && "active"
                 }`}
                 href="#portfolio"
               >
@@ -43,9 +43,8 @@ const NavBar = (props) => {
             </li>
             <li>
               <a
-                className={`nav-link scrollto ${
-                  props.scrollPosition >= (props.contactOffSetTop-200) && "active"
-                }`}
+                className={`nav-item nav-link ${
+                  props.scrollPosition >= (props.contactOffSetTop-800)  && "active" }`}
                 href="#contact"
               >
                 Contact
@@ -75,10 +74,11 @@ const NavBar = (props) => {
                 About
               </a>
               <a href="#portfolio" className={`nav-item nav-link ${
-                  props.scrollPosition >= (props.portfolioOffSetTop-200)  && "active" }`}>
+                  props.scrollPosition >= (props.portfolioOffSetTop-200) && props.scrollPosition < (props.contactOffSetTop-200) && "active" }`}>
                 Portfolio
               </a>
-              <a href="#contact" className="nav-item nav-link disabled" tabIndex="-1">
+              <a href="#contact" className={`nav-item nav-link ${
+                  props.scrollPosition >= (props.contactOffSetTop-200)  && "active" }`}>
                 Contact
               </a>
             </div>
