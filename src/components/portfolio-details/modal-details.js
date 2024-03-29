@@ -259,7 +259,7 @@ export const modalDetails = [
         description: "convey the brand's story, values, and mission",
       },
     ],
-    color: "stroke",
+    color: "dark",
     textBg: "gray",
     category: "Web Application",
     client: "The yutes",

@@ -65,7 +65,7 @@ const NavBar = (props) => {
             <i className="bi bi-list mobile-nav-toggle text-light"></i>
           </div>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div className="navbar-nav">
+            <div className="navbar-nav mobile-nav-color">
               <a href="#home" className={`nav-item nav-link ${   (props.scrollPosition=== 0 && "active") || (props.scrollPosition < (props.aboutoffSetTop-200) &&
                   "active")}`}>
                 Home
