@@ -12,7 +12,7 @@ const About = ({ aboutElement }) => {
           <div className="row">
             <div className="col-lg-4" data-aos="fade-right">
               <img
-                src="https://i.ibb.co/6gbH6kB/useful.jpg"
+                src="https://i.ibb.co/pJtCYj1/IMG-0285.jpg"
                 className="img-fluid rounded"
                 alt="profile pic"
               />
