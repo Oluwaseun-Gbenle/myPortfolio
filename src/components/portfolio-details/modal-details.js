@@ -1,5 +1,74 @@
 export const modalDetails = [
   {
+    title: "NBA Stamp and Seal Portal",
+    image: [
+      {
+        slide: "https://i.ibb.co/xtTp5Lz4/glow-4.png",
+        label: "Home Page",
+        description: "Focuses on ease of navigation, and showcasing a wide range of options.",
+      },
+      {
+        slide: "https://i.ibb.co/S4KC6bxs/glow-5.png",
+        label: "AI assisted legal grafting",
+        description: "Legal grafting with assistance of AI",
+      },
+      
+    ],
+    color: "light",
+    category: "Web Application",
+    client: "lawpavilion",
+    site: "https://estamp.nigerianbar.org.ng",
+    date: "08, Feburary 2024",
+    projectDetails: "",
+    featureList: [],
+  },
+  {
+    title: "Account Manager's Dashboard",
+    image: [
+      {
+        slide: "https://i.ibb.co/WvFJMZPf/glow-1.png",
+        label: "Home Page",
+        description: "Focuses on ease of navigation, and showcasing a wide range of options.",
+      },
+      {
+        slide: "https://i.ibb.co/jZVdRRYH/glow-6.png",
+        label: "MyClients",
+        description: "A view of the Account Manager's clients",
+      },
+      
+    ],
+    color: "light",
+    category: "Web Application",
+    client: "lawpavilion",
+    site: "https://account-manager.lawpavilion.com/",
+    date: "08, Feburary 2024",
+    projectDetails: "",
+    featureList: [],
+  },
+  {
+    title: "Addon Manager",
+    image: [
+      {
+        slide: "https://i.ibb.co/Xf3mbzJY/glow-2.png",
+        label: "Home Page",
+        description: "Focuses on ease of navigation, and showcasing a wide range of options.",
+      },
+      {
+        slide: "https://i.ibb.co/xqJWqc13/glow-7.png",
+        label: "Transactions",
+        description: "A view of all transactions done by the  clients of the Account manager",
+      },
+      
+    ],
+    color: "light",
+    category: "Web Application",
+    client: "lawpavilion",
+    site: "https://addon-manager.lawpavilion.com",
+    date: "08, Feburary 2024",
+    projectDetails: "",
+    featureList: [],
+  },
+  {
     title: "ArbitAI",
     image: [
       {
