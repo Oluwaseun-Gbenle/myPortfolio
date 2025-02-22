@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import "./style.css";
 import Typed from "typed.js";
 import NavBar from "./navBar";
-import Loader from "./loader";
+import Loader from "./utils/loader";
 import About from "./about";
-import { useScrollPosition } from "./scroll-on-y-axis";
-import Portfolio from "./portfolio";
+import { useScrollPosition } from "./utils/scroll-on-y-axis";
+import Portfolio from "./portfolio-details/portfolio";
 import Contact from "./contact";
-import Stars from "./stars";
+import Stars from "./utils/stars";
 
 const IntroductoryPage = () => {
   const el = useRef(null);
@@ -23,8 +23,6 @@ const IntroductoryPage = () => {
   const portfolioOffSetTop = portfolio.offsetTop;
   const contactOffSetTop = contact.offsetTop;
 
-  
-
   useEffect(() => {
     let loader = loaderEl.current;
     setTimeout(() => {
@@ -37,7 +35,7 @@ const IntroductoryPage = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["software developer","software engineer"],
+      strings: ["software developer", "software engineer"],
       startDelay: 2000,
       typeSpeed: 100,
       backSpeed: 100,
@@ -53,12 +51,17 @@ const IntroductoryPage = () => {
   return (
     <>
       <Loader loaderEl={loaderEl} />
-      <div id="home" className="container1 " >
-        <div> 
+      <div id="home" className="container1 ">
+        <div>
           <div className="">
-         <Stars/>
-         </div>
-          <NavBar scrollPosition={scrollPosition} aboutoffSetTop={aboutoffSetTop} portfolioOffSetTop={portfolioOffSetTop} contactOffSetTop={contactOffSetTop}/>
+            <Stars />
+          </div>
+          <NavBar
+            scrollPosition={scrollPosition}
+            aboutoffSetTop={aboutoffSetTop}
+            portfolioOffSetTop={portfolioOffSetTop}
+            contactOffSetTop={contactOffSetTop}
+          />
           <div className="row align-items-center center-text vh-100 on-canvas">
             <div className="d-flex justify-content-center  ">
               <div className="text-container w-100 text-white text-center">
@@ -76,7 +79,7 @@ const IntroductoryPage = () => {
                   <a href="https://github.com/Oluwaseun-Gbenle" target="_blank" rel="noreferrer" className="github social-links">
                     <i className="bi bi-github"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/oluwaseun-gbenle-03742a158" target="_blank" rel="noreferrer"  className="linkedin social-links">
+                  <a href="https://www.linkedin.com/in/oluwaseun-gbenle-03742a158" target="_blank" rel="noreferrer" className="linkedin social-links">
                     <i className="bi bi-linkedin"></i>
                   </a>
                 </div>

@@ -1,7 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from "@emailjs/browser";
+import { toast } from 'react-toastify';
 
 const Contact = ({contactElement}) => {
+  const [formData, setFormData] = useState({ from_name: "", email: "", message: "" });
 
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formData,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then((response) => {
+        toast.success("Message sent successfully!",{
+          position: "top-right",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "dark",
+
+          });
+      })
+      .catch((error) => {
+        console.error("Error sending message:", error);
+      });
+  };
+console.log("key", process.env.REACT_APP_SERVICE_ID);
   return (
     <>
      <div className='contact-svg mt-5 '>
@@ -19,10 +54,10 @@ const Contact = ({contactElement}) => {
           <div className="fw-bold  raleway-font text-center"data-aos='slide-right'data-delay="0.5s"   >
             Have a question or want to work together?
           </div>
-          <form className='' action="mailto:gbenleseun2016@gmail.com" method="post" encType='text/plain' data-aos="zoom-in" data-delay="0.5s"  id="contact-form">
-            <div className=""><input  className='bg-dark w-100 p-2 mt-4  text-light' placeholder="Name" type="text" name="name" required=""/></div>
-            <div className=""><input  className='bg-dark w-100  p-2 text-light' placeholder="Enter email" type="email" name="email" required=""/></div>
-            <textarea className='bg-dark  p-2 textarea-height text-light w-100' placeholder="Your Message" type="text" name="message"></textarea>
+          <form className='' onSubmit={handleSubmit}   data-aos="zoom-in" data-delay="0.5s"  id="contact-form">
+            <div className=""><input   onChange={handleChange} value={formData.from_name}  className='bg-dark w-100 p-2 mt-4  text-light' placeholder="Name" type="text" name="from_name" required=""/></div>
+            <div className=""><input onChange={handleChange} value={formData.email} className='bg-dark w-100  p-2 text-light' placeholder="Enter email" type="email" name="email" required=""/></div>
+            <textarea className='bg-dark  p-2 textarea-height text-light w-100' value={formData.message}  onChange={handleChange} placeholder="Your Message" type="text" name="message"></textarea>
             <div id="success">
            
             </div>

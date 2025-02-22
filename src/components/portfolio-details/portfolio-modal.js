@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel, Modal } from "react-bootstrap";
-import { modalDetails } from "./portfolio-details/modal-details";
+import { modalDetails } from "./modal-details";
 import AnimatedCursor from "react-animated-cursor";
 
 const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {

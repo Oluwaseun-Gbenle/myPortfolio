@@ -335,9 +335,14 @@ canvas {
   font-size: 24px;
   font-weight: 500;
 }
-.modal-dialog {
+
+.modal-width {
   min-width: 90%;
+} 
+.see-more-modal-width{
+  min-width: 98%;
 }
+
 .modal-padding {
   margin: 0 35px;
 }
