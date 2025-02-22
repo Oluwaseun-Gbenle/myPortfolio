@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import PortfolioModal from "./portfolio-modal";
 import { portfolioList } from "./portfolio-list";
-import SeeMoreModal from "./see-more-modal";
+import { Link } from "react-router-dom";
 
 const Portfolio = ({ portfolioElement }) => {
   const [showPortfolioModal, setShowPortfolioModal] = useState(false);
-  const [showSeeMoreModal, setShowSeeMoreModal] = useState(false);
   const [modalNumber, setModalNumber] = useState(-1);
   return (
     <>
@@ -19,7 +18,6 @@ const Portfolio = ({ portfolioElement }) => {
             <section id="portfolio" className="portfolio">
               <div className="container">
                 <PortfolioModal showModal={showPortfolioModal} setShowModal={setShowPortfolioModal} modalNumber={modalNumber} />
-                <SeeMoreModal showModal={showSeeMoreModal} setShowModal={setShowSeeMoreModal} setShowPortfolioModal={setShowPortfolioModal} setModalNumber={setModalNumber} />
                 <div className="row portfolio-container">
                   {portfolioList?.slice(0, 9).map((item, idx) => (
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app " data-aos="slide-up" key={idx}>
@@ -42,9 +40,12 @@ const Portfolio = ({ portfolioElement }) => {
                       </div>
                     </div>
                   ))}
-                  <button onClick={()=> setShowSeeMoreModal(true)} className="text-success bg-black border-0  d-flex align-items-center justify-content-center gap-2 fs-4 fw-bold">
+                  <Link
+                    to={"/all-portfolio"}
+                    className="text-success text-decoration-none  bg-black border-0  d-flex align-items-center justify-content-center gap-2 fs-4 fw-bold"
+                  >
                     See More <i className="bi bi-chevron-right fw-bold"></i>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </section>

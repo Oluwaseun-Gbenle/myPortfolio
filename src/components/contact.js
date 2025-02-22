@@ -36,7 +36,7 @@ theme: "dark",
         console.error("Error sending message:", error);
       });
   };
-console.log("key", process.env.REACT_APP_SERVICE_ID);
+  
   return (
     <>
      <div className='contact-svg mt-5 '>

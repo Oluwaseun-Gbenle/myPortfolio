@@ -342,7 +342,10 @@ canvas {
 .see-more-modal-width{
   min-width: 98%;
 }
-
+.back-icon{
+color:#18d26e;
+margin: 20px;
+}
 .modal-padding {
   margin: 0 35px;
 }

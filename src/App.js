@@ -7,6 +7,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
 import { ToastContainer } from "react-toastify";
+import PortfolioSeeMore from "./components/portfolio-details/see-more-modal";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NotFound from "./components/not-found";
 
 const App = () => {
   useEffect(() => {
@@ -14,7 +17,7 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <Router>
       <div className="cursor-style">
         <AnimatedCursor innerSize={19} outerSize={19} color="24, 210 ,110" outerAlpha={0.4} innerScale={0.7} outerScale={5} />
         <ToastContainer
@@ -30,8 +33,12 @@ const App = () => {
           theme="dark"
         />
       </div>
-      <IntroductoryPage />
-    </>
+      <Routes>
+        <Route path="/" element={<IntroductoryPage />} />
+        <Route path="/all-portfolio" element={<PortfolioSeeMore />} />
+        <Route path="*" element={<NotFound />} />  
+      </Routes>
+    </Router>
   );
 };
 
