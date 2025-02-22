@@ -89,7 +89,7 @@ const Contact = ({ contactElement }) => {
                 ></textarea>
                 <div id="success"></div>
                 <div className="d-flex justify-content-center">
-                  <input className="button submit-button mt-3" type="submit" id="submit" value="SUBMIT" />
+                  <input className="button submit-button fw-bold mt-3" type="submit" id="submit" value="SUBMIT" />
                 </div>
               </form>
             </div>
