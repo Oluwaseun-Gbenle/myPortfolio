@@ -7,7 +7,6 @@ const Portfolio = ({ portfolioElement }) => {
   const [showPortfolioModal, setShowPortfolioModal] = useState(false);
   const [modalNumber, setModalNumber] = useState(-1);
   return (
-    <>
       <div id="portfolio" ref={portfolioElement} className="cont-padding text-light">
         <div className="container">
           <div className="section-title py-4 text-center">
@@ -52,7 +51,7 @@ const Portfolio = ({ portfolioElement }) => {
           </div>
         </div>
       </div>
-    </>
+
   );
 };
 

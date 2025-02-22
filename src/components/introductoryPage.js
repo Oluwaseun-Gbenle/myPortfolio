@@ -11,10 +11,10 @@ import Stars from "./utils/stars";
 
 const IntroductoryPage = () => {
   const el = useRef(null);
-  const loaderEl = useRef(null);
-  const scrollPosition = useScrollPosition();
+   const loaderEl = useRef(null);
+   const scrollPosition = useScrollPosition();
   const aboutElement = useRef("about");
-  const portfolioElement = useRef("portfolio");
+   const portfolioElement = useRef("portfolio");
   const contactElement = useRef("contact");
   const about = aboutElement.current;
   const portfolio = portfolioElement.current;
@@ -49,7 +49,7 @@ const IntroductoryPage = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <Loader loaderEl={loaderEl} />
       <div id="home" className="container1 ">
         <div>
@@ -91,7 +91,7 @@ const IntroductoryPage = () => {
       <About aboutElement={aboutElement} />
       <Portfolio portfolioElement={portfolioElement} />
       <Contact contactElement={contactElement} />
-    </>
+    </div>
   );
 };
 

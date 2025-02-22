@@ -7,7 +7,6 @@ const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
   const textColor = modalDetails[modalNumber]?.color === "light"? "text-dark":modalDetails[modalNumber]?.color === "stroke" ? "text-stroke text-white":"text-white"
   
   return (
-    <>
       <Modal show={showModal} onHide={() =>  setShowModal(false)} dialogClassName="modal-width" centered>
         <div onClick={() => setShowModal(false)} type="button" className="btn-close btn-close-white  mx-4 mt-4"></div>
         <Modal.Body className="">
@@ -81,7 +80,6 @@ const PortfolioModal = ({ showModal, setShowModal, modalNumber }) => {
           </div>
         </Modal.Body>
       </Modal>
-    </>
   );
 };
 
