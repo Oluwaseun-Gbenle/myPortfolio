@@ -76,9 +76,6 @@ const IntroductoryPage = () => {
                   <a href="https://github.com/Oluwaseun-Gbenle" target="_blank" rel="noreferrer" className="github social-links">
                     <i className="bi bi-github"></i>
                   </a>
-                  <a href="/" className="instagram social-links">
-                    <i className="bi bi-instagram"></i>
-                  </a>
                   <a href="https://www.linkedin.com/in/oluwaseun-gbenle-03742a158" target="_blank" rel="noreferrer"  className="linkedin social-links">
                     <i className="bi bi-linkedin"></i>
                   </a>

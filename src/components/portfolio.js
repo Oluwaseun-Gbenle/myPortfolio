@@ -25,7 +25,7 @@ const Portfolio = ({ portfolioElement }) => {
                   setShowModal={setShowModal}
                   modalNumber={modalNumber}
                 />
-                <div className="row portfolio-container ">
+                <div className="row portfolio-container">
                   {portfolioList?.map((item, idx) => (
                     <div
                       className="col-lg-4 col-md-6 portfolio-item filter-app "
