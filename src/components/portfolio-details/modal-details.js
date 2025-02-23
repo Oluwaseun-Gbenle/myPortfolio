@@ -19,7 +19,7 @@ export const modalDetails = [
     client: "lawpavilion",
     site: "https://estamp.nigerianbar.org.ng",
     date: "08, Feburary 2024",
-    projectDetails: "",
+    projectDetails: "This project was designed to streamline the application and issuance of official stamps and seals to qualified legal practitioners in Nigeria. These stamps and seals serve as a mark of authenticity on legal documents.  It integrates AI-assisted legal drafting, digital stamp affixing, and an a system for purchasing stamps.",
     featureList: [],
   },
   {
@@ -42,7 +42,7 @@ export const modalDetails = [
     client: "lawpavilion",
     site: "https://account-manager.lawpavilion.com/",
     date: "08, Feburary 2024",
-    projectDetails: "",
+    projectDetails: "The Account Manager's Dashboard is a centralized platform designed to help account managers efficiently oversee user accounts, transactions, reports, and operational workflows. It provides real-time insights, approval workflows, and role-based access control to manage financial, customer, or operational data effectively.",
     featureList: [],
   },
   {
@@ -65,7 +65,31 @@ export const modalDetails = [
     client: "lawpavilion",
     site: "https://addon-manager.lawpavilion.com",
     date: "08, Feburary 2024",
-    projectDetails: "",
+    projectDetails: "The Add-On Manager allows account managers  manage and configure add-ons or extensions within the application. It provides a structured way to enhance the core functionality of the account manager dashboard by integrating additional features without modifying the base system.",
+    featureList: [],
+  },
+  {
+    title: "Content Management System",
+    image: [
+      {
+        slide: "https://i.ibb.co/SDJ7qdB7/Untitled-design-2.png",
+        label: "About Page",
+        description: "This edits the main block or featured area with a small caption, caption, and subtext",
+      },
+
+      {
+        slide: "https://i.ibb.co/35NYWCrF/Untitled-design-4.png",
+        label: "Career Page",
+        description: "This is an image of the main block on career page",
+      },
+    
+    ],
+    color: "light",
+    category: "Web Application",
+    client: "lawpavilion",
+    site: "https://cms-staging.lawpavilion.com",
+    date: "08, Feburary 2024",
+    projectDetails: "The Content Manager is responsible for creating, organizing, editing, publishing, and maintaining content on the main website. It provides tools to manage text, images, videos, and other digital assets efficiently",
     featureList: [],
   },
   {
@@ -103,10 +127,9 @@ export const modalDetails = [
     client: "ArbitAI",
     site: "https://arbitai.com",
     date: "08, Feburary 2024",
-    projectDetails: "",
+    projectDetails: "ArbitAI is an AI-powered decentralized finance (DeFi) platform that integrates machine learning and blockchain technology to manage liquidity pools through specialized trading algorithms.The focus was on creating an intuitive and responsive interface that facilitates seamless interaction with the platform's features.",
     featureList: [],
   },
-
   {
     title: "Reeple",
     image: [
@@ -136,14 +159,52 @@ export const modalDetails = [
         description: "This blog post offers a deep dive into each item in blog page",
       },
     ],
-    color: "stroke",
+    color: "green",
     category: "Web Application",
     client: "Reeple",
     site: "https://www.reeple.ai",
     date: "08, January 2024",
-    projectDetails: "",
+    projectDetails: "Reeple.ai is a financial service platform designed to connect African diasporas and freelancers with global financial opportunities. The focus creating that app was on creating a user-friendly and culturally relevant interface that ensures accessibility across different devices and internet speeds. The platform includes seamless integration with financial APIs for secure transactions while maintaining high performance and security standards.",
     featureList: [],
   },
+
+  {
+    title: "Meeting People",
+    image: [
+      {
+        slide: "https://i.ibb.co/85bh21T/glow-12.png",
+        label: "Sign Up Page",
+        description: "A registration page for users",
+      },
+      {
+        slide: "https://i.ibb.co/2ZQgQBR/glow-13.png",
+        label: "Sign In Page",
+        description: "A Login Page for users",
+      },
+      {
+        slide: "https://i.ibb.co/2v8D1tJ/glow-14.png",
+        label: "Chat Lobby",
+        description: "A page to enable users generate new chats and view current friends",
+      },
+      {
+        slide: "https://i.ibb.co/z8fjgDj/glow-15.png",
+        label: "Chat Page",
+        description: "A page to chat with friends",
+      },
+      {
+        slide: "https://i.ibb.co/ZcYskHy/glow-16.png",
+        label: "Profile Page",
+        description: "A page to edit what other users can view about client",
+      },
+    ],
+    color: "light",
+    category: "Mobile Application",
+    client: "Shey",
+    date: "01, September 2023",
+    projectDetails: "Meeting People App is a social networking and chat application designed to help users connect with new people for friendships, dating, or networking. the focus was on building an intuitive and engaging interface that enables smooth communication and interactions between users.",
+    featureList: [],
+  }, 
+
   {
     title: "School Management Portal",
     image: [
@@ -262,42 +323,7 @@ export const modalDetails = [
     ],
   },
 
-  {
-    title: "Meeting People",
-    image: [
-      {
-        slide: "https://i.ibb.co/85bh21T/glow-12.png",
-        label: "Sign Up Page",
-        description: "A registration page for users",
-      },
-      {
-        slide: "https://i.ibb.co/2ZQgQBR/glow-13.png",
-        label: "Sign In Page",
-        description: "A Login Page for users",
-      },
-      {
-        slide: "https://i.ibb.co/2v8D1tJ/glow-14.png",
-        label: "Chat Lobby",
-        description: "A page to enable users generate new chats and view current friends",
-      },
-      {
-        slide: "https://i.ibb.co/z8fjgDj/glow-15.png",
-        label: "Chat Page",
-        description: "A page to chat with friends",
-      },
-      {
-        slide: "https://i.ibb.co/ZcYskHy/glow-16.png",
-        label: "Profile Page",
-        description: "A page to edit what other users can view about client",
-      },
-    ],
-    color: "light",
-    category: "Mobile Application",
-    client: "",
-    date: "01, September 2023",
-    projectDetails: "",
-    featureList: [],
-  },
+ 
 
   {
     title: "The yutes site",
@@ -328,11 +354,12 @@ export const modalDetails = [
         description: "convey the brand's story, values, and mission",
       },
     ],
-    color: "dark",
+    color: "green",
     textBg: "gray",
     category: "Web Application",
     client: "The yutes",
     date: "January 2020",
+    site: "https://www.theyutes.com",
     projectDetails: "",
     featureList: [],
   },
@@ -374,7 +401,7 @@ export const modalDetails = [
         description: "Home Page",
       },
     ],
-    color: "stroke",
+    color: "green",
     category: "Web Application",
     client: "",
     date: "01, May 2021",
